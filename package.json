@@ -1,0 +1,22 @@
+{
+  "name": "command-options-handler",
+  "version": "0.1.1",
+  "declaration": "./dist/index.d.ts",
+  "description": "Command Options Handler is a library for handling options/arguments in string format.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc && babel src -d dist"
+  },
+  "keywords": [],
+  "author": "Marcuth",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@types/node": "^20.11.19"
+  },
+  "dependencies": {
+    "zod": "^3.22.4"
+  }
+}
