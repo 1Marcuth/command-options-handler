@@ -21,6 +21,6 @@ export type CommandOption = {
 
 export type Command = {
     name: string
-    options: CommandOption[]
+    options?: CommandOption[]
     description: string
 }

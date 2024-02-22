@@ -1,4 +1,4 @@
-import CommandHandler, { HandlingResult, OptionValidationIsValid, OptionValidationResult } from "./command-handler"
+import CommandHandler, { HandlingResult, OptionValidationIsValid, OptionValidationResult, CommandWithOptions } from "./command-handler"
 import { Command, CommandOption, CommandOptionChoice, CommandOptionTypes } from "./types"
 import Parser, { ParseResult, ParseResultValue } from "./parser"
 
@@ -12,7 +12,8 @@ export {
     ParseResultValue,
     HandlingResult,
     OptionValidationIsValid,
-    OptionValidationResult
+    OptionValidationResult,
+    CommandWithOptions
 }
 
 export default CommandHandler

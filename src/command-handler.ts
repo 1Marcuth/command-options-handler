@@ -20,11 +20,18 @@ export type OptionValidationResult = {
     value: ParseResultValue
 }
 
+export type CommandWithOptions = {
+    options: CommandOption[]
+} & Command
+
 class CommandHandler {
-    public command: Command
+    public command: CommandWithOptions
 
     public constructor(command: Command) {
-        this.command = command
+        this.command = !command.options ? {
+            ...command,
+            options: []
+        } : command as CommandWithOptions
     }
 
     public validateOption(option: CommandOption, stringOption: string): OptionValidationResult {
