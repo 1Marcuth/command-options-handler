@@ -1,6 +1,6 @@
 {
   "name": "command-options-handler",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "declaration": "./dist/index.d.ts",
   "description": "Command Options Handler is a library for handling options/arguments in string format.",
   "main": "./dist/index.js",
